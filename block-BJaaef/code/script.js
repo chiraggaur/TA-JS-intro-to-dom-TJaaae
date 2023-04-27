@@ -1,11 +1,30 @@
 let ul = document.querySelector('ul');
-got.houses.forEach((house) => {
-    let li = document.createElement('li');
-    let h2 = document.createElement('h2');
-       house.people.forEach((elm) => 
-         h2.innertext =  elm.name
-         console.log(h2));
-    let p = document.createElement('p');
-    let img = document.createElement('img');
-    ul.append(h2);
-})
+let house = got.houses.reduce((acc, cv) => {
+    acc = acc.concat(cv.people);
+    return acc;
+},[]);
+
+ let html = house.map((details) => {
+    return (      `<li class = "Lists">
+    <div class = "Box">
+    <img
+     src = ${details.image}
+     alt = ${details.name}
+    /> 
+    <span>
+    <h2>
+    ${details.name}
+    </h2>
+     <span>
+    </div>
+    <p>
+    ${details.description}
+    </p>
+    <button  class = "Learn"  > <a href = "${details.wikiLink}">Learn More! </a> </button>
+    </li>`);
+  
+    
+
+    
+});
+   ul.innerHTML = html.join('');

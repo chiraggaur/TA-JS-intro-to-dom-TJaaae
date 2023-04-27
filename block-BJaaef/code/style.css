@@ -29,3 +29,57 @@ h1{
   color: white;
   background-color:rgb(48, 91, 233);
 }
+.Names_list{
+   /* border: 2px solid black; */
+   display: flex;
+   height: 350vh;
+   flex-wrap: wrap;
+   background-color: rgb(174, 208, 212);
+  
+}
+.Lists{
+  /* border: 2px solid black; */
+  width: 30%;
+  height: 200px;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+img{
+  width: 80px;
+  height: 80px;
+  border: 2px solid greenyellow;
+  border-radius: 50%;
+}
+h2{
+  /* border: 2px solid black; */
+  width: 250px;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  left: 10px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Box{
+   display: flex;
+
+}
+p{
+  width: 90%;
+  height: 30px;
+}
+.Learn{
+   position: relative;
+   top: 10px;
+   left: 10px;
+   width: 90%;
+   background-color: rgb(101, 188, 246);
+   height: 30px;
+}
+a{
+  text-decoration: none;
+}
