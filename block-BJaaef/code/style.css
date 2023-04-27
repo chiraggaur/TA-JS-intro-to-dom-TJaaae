@@ -15,7 +15,17 @@ body {
   height: 500px;
   border-radius: 10px;
 }
-h1,
-h2 {
+h1{
   text-align: center;
+}
+
+h1{
+  /* border: 2px solid black; */
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color:rgb(48, 91, 233);
 }
